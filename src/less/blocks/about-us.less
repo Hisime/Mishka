@@ -1,0 +1,42 @@
+.about-us {
+
+  .container--padding();
+  padding-top: 30px;
+
+  &__title {
+    .middle-title();
+    margin-bottom: 30px;
+
+    @media (min-width: @screen-xl) {
+      margin-bottom: 45px;
+    }
+  }
+
+  &__items {
+    .list-reset();
+
+    @media (min-width: @screen-lg) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  &__icon {
+    display: block;
+    height: 37px;
+    margin-bottom: 17px;
+  }
+
+  &__item {
+    font-size: @fz-small;
+    font-weight: @bold;
+    color: @black;
+    margin-bottom: 35px;
+
+    @media (min-width: @screen-lg) {
+      width: 50%;
+      font-size: @fz-middle;
+    }
+  }
+}
