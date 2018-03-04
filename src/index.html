@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <include src="src/include/head.html"></include>
+</head>
+<body>
+  <div style="display:none">
+    <include src="src/img/sprite.svg"></include>
+  </div>
+  <include src="src/include/header.html"></include>
+
+  <section class="hero-header">
+    <div class="hero-header__inner">
+      <div class="hero-header__wrapper-img">
+        <h1 class="hero-header__title">
+          Милые штуки ручной  <br>
+          работы для дома
+        </h1>
+      </div>
+      <nav class="hero-header__nav">
+        <ul class="hero-header__list">
+          <li class="hero-header__item">
+            <a class="hero-header__link hero-header__link--interior" href="#">
+              Предметы  <br>
+              интерьера
+              <svg width="40" height="62">
+                <use xlink:href="#icon-interior"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="hero-header__item">
+            <a class="hero-header__link hero-header__link--toys" href="#">
+              Детские  <br>
+              игрушки
+              <svg width="60" height="60">
+                <use xlink:href="#icon-toy"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <section class="week-item">
+    <div class="week-item__inner">
+      <header class="week-item__header">
+        <h2 class="week-item__title">Вязаные корзинки</h2>
+        <b class="week-item__subtitle">Товар недели</b>
+      </header>
+      <div class="week-item__info">
+        <p class="week-item__decription">
+          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+        </p>
+        <table class="week-item__options">
+          <tr class="week-item__option-row">
+            <td class="week-item__option">Цвет:</td>
+            <td class="week-item__value">«Тиффани»/серый</td>
+          </tr>
+          <tr class="week-item__option-row">
+            <td class="week-item__option">Диаметр:</td>
+            <td class="week-item__value"> 25 см</td>
+          </tr>
+          <tr class="week-item__option-row">
+            <td class="week-item__option">Высота:</td>
+            <td class="week-item__value">15 см</td>
+          </tr>
+        </table>
+      </div>
+      <div class="week-item__photo">
+        <picture>
+          <source media="(min-width: 1050px)" srcset="img/triple-set-desktop.png">
+          <source media="(min-width: 768px)" srcset="img/triple-set-tablet.png">
+          <source media="(min-width: 0)" srcset="img/triple-set-mobile.png">
+          <img src="img/triple-set-desktop.png" alt="Логотип Мишка">
+        </picture>
+      </div>
+      <footer class="week-item__footer">
+        <p class="week-item__price">Цена: 990 руб.</p>
+        <button class="btn" type="button">Заказать</button>
+      </footer>
+    </div>
+  </section>
+
+
+  <section class="about-us">
+    <h2 class="about-us__title">Коротко о нас:</h2>
+    <ul class="about-us__items">
+      <li class="about-us__item">
+        <span class="about-us__icon">
+          <svg width="32" height="37">
+            <use xlink:href="#icon-feature-flower"></use>
+          </svg>
+        </span>
+        <p>
+          Экологически  <br>чистые материалы
+        </p>
+      </li>
+      <li class="about-us__item">
+        <span class="about-us__icon">
+          <svg width="48" height="28">
+            <use xlink:href="#icon-feature-money"></use>
+          </svg>
+        </span>
+        <p>
+          Скандинавский стиль  <br>
+          по российской цене
+        </p>
+      </li>
+      <li class="about-us__item">
+        <span class="about-us__icon">
+          <svg width="34" height="27">
+            <use xlink:href="#icon-feature-heart"></use>
+          </svg>
+        </span>
+        <p>
+          Увеличивает лайки <br>
+          на фотографиях
+        </p>
+      </li>
+      <li class="about-us__item">
+        <span class="about-us__icon">
+          <svg width="36" height="34">
+            <use xlink:href="#icon-feature-ball"></use>
+          </svg>
+        </span>
+        <p>
+          Связано вручную с <br>
+          любовью и умилением
+        </p>
+      </li>
+      <li class="about-us__item">
+        <span class="about-us__icon">
+          <svg width="56" height="25">
+            <use xlink:href="#icon-feature-rocket"></use>
+          </svg>
+        </span>
+        <p>
+          Поддержка отечественного <br>
+          производителя
+        </p>
+      </li>
+      <li class="about-us__item">
+        <span class="about-us__icon">
+          <svg width="34" height="33">
+            <use xlink:href="#icon-feature-gift"></use>
+          </svg>
+        </span>
+        <p>
+          Поставляется в  <br>
+          подарочной упаковке
+        </p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="reviews">
+    <h2 class="reviews__title">Отзывы</h2>
+    <div class="reviews__items">
+      <blockquote class="reviews__item">
+        <p class="reviews__text">
+          Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+        </p>
+        <footer class="reviews__author">
+          <cite>
+             <span class="reviews__name">Анастасия Красильникова</span>
+             <span class="reviews__nickname">@misssssiskras</span>
+          </cite>
+        </footer>
+        </blockquote>
+    </div>
+    <div class="reviews__arrows">
+      <button class="reviews__left"></button>
+      <button class="reviews__right"></button>
+    </div>
+    <button class="btn" type="button">Написать</button>
+  </section>
+
+  <section class="contacts">
+    <h3 class="contacts__title">Контакты</h3>
+    <div class="contacts__item">
+      <span class="contacts__name">e-mail:</span>
+      <a class="contacts__maiil" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+    </div>
+    <div class="contacts__item">
+      <span class="contacts__name">адрес:</span>
+      <div class="contacts__address">
+        г. Санкт-Петербург,
+        ул. Большая Конюшенная,
+        д. 19/8, офис 101
+      </div>
+    </div>
+
+    <div class="map"></div>
+
+    <button class="btn" type="button">Напишите нам</button>
+
+  </section>
+
+  <footer class="page-footer">
+    <ul class="social">
+      <li><a href="#">Инстаграм</a></li>
+      <li><a href="#">Фэйсбук</a></li>
+      <li><a href="#">Твиттер</a></li>
+    </ul>
+    <div class="page-footer__copyright">
+      Разработано
+    </div>
+  </footer>
+
+</body>
+</html>
