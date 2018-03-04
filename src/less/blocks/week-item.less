@@ -1,0 +1,157 @@
+.week-item {
+  padding-top: 30px;
+  padding-bottom: 36px;
+  background-image: url(../img/bg-zigzag-line.svg);
+  background-repeat: repeat-x;
+  background-position: 0 100%;
+  background-size: 300px;
+
+  @media (min-width: @screen-lg) {
+    padding-top: 45px;
+    padding-bottom: 70px;
+    background-size: auto;
+  }
+
+  @media (min-width: @screen-lg) {
+    padding-top: 70px;
+    padding-bottom: 90px;
+  }
+
+  &__inner {
+    .container--padding();
+
+
+    @media (min-width: @screen-lg) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    @media (min-width: @screen-xl) {
+      padding-left: 175px;
+    }
+
+  }
+
+  &__header {
+    @media (min-width: @screen-lg) {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+
+    @media (min-width: @screen-xl) {
+      position: relative;
+      margin-bottom: -172px;
+    }
+  }
+
+  &__footer {
+    text-align: center;
+    @media (min-width: @screen-lg) {
+      margin-top: -129px;
+    }
+    @media (min-width: @screen-xl) {
+      margin-top: -137px;
+    }
+
+  }
+
+  &__info {
+
+    @media (min-width: @screen-lg) {
+      width: 290px;
+    }
+
+    @media (min-width: @screen-xl) {
+      margin-right: 57px;
+      margin-top: 142px;
+    }
+  }
+
+  &__options {
+    width: 100%;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+
+    td {
+      padding: 11px 0;
+    }
+  }
+
+  &__option-row {
+    border-bottom: 1px solid @grey;
+  }
+
+  &__option {
+    width: 39%;
+  }
+
+  &__value {
+    width: 61%;
+  }
+
+  &__photo {
+    text-align: center;
+    img {
+      max-width: 100%;
+    }
+
+    @media (min-width: @screen-lg) {
+      width: 50%;
+    }
+
+    @media (min-width: @screen-xl) {
+      width: 60%;
+    }
+  }
+
+  &__title {
+    .middle-title();
+    margin-bottom: 5px;
+  }
+
+  &__subtitle {
+    display: block;
+    margin-bottom: 25px;
+    font-size: @fz-small;
+    color: @light-teal;
+    text-transform: uppercase;
+
+    @media (min-width: @screen-lg) {
+      width: 100px;
+      margin-bottom: 0;
+      margin-right: 15px;
+      text-align: center;
+    }
+
+    @media (min-width: @screen-xl) {
+      position: absolute;
+      top: 65px;
+      left: -139px;
+    }
+  }
+
+  &__decription {
+    line-height: 1.5;
+
+    @media (min-width: @screen-xl) {
+      margin-bottom: 65px;
+    }
+  }
+
+  &__price {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: @fz-small;
+    font-weight: @bold;
+    text-align: center;
+
+    @media (min-width: @screen-lg) {
+      font-size: @fz-middle;
+      margin-bottom: 34px;
+    }
+  }
+}
