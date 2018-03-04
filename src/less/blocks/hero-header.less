@@ -1,0 +1,141 @@
+.hero-header {
+  position: relative;
+  background-color: @light-grey;
+
+  @media (min-width: @screen-lg) {
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      z-index: 10;
+      width: 100%;
+      height: 24px;
+      background-image: url(../img/zigzag-fill.svg);
+    }
+  }
+
+  &__inner {
+    .container();
+  }
+
+  &__wrapper-img {
+    height: 285px;
+    padding-top: 70px;
+    background-color: @light-grey;
+    background-image: url(../img/hero-bg-sm.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+
+    @media (min-width: @screen-lg) {
+      height: 630px;
+      padding-top: 155px;
+      background-image: url(../img/hero-bg-lg.png);
+    }
+
+  }
+
+  &__title {
+    width: 80%;
+    margin: 0 auto;
+    font-size: @fz-h1;
+    font-weight: @bold;
+    text-align: center;
+    color: @black;
+
+    @media (min-width: @screen-lg) {
+      font-size: @fz-h1-lg;
+    }
+
+    @media (min-width: @screen-xl) {
+      font-size: @fz-h1-xl;
+    }
+
+  }
+
+  &__list {
+    .list-reset();
+    background: linear-gradient(to right, @light-teal, @light-teal 50%, @teal 50%);
+    @media (min-width: @screen-lg) {
+      display: flex;
+    }
+  }
+
+  &__item {
+    @media (min-width: @screen-lg) {
+      width: 50%;
+    }
+  }
+
+  &__link--interior {
+    background-color: @light-teal;
+    &:hover {
+      background-color: @teal-59;
+      svg {
+        fill: @teal-41;
+      }
+    }
+    &:active {
+      background-color: @teal-59;
+      color: rgba(255,255,255,.3);
+      svg {
+        fill: @teal-68;
+      }
+    }
+    svg {
+      right: 37px;
+    }
+  }
+
+  &__link--toys {
+    background-color: @teal;
+    &:hover {
+      background-color: @teal-70;
+      svg {
+        fill: @teal-35;
+      }
+    }
+    &:active {
+      color: rgba(255,255,255,.3);
+      background-color: @teal-70;
+      svg {
+        fill: #37b2a0;
+      }
+    }
+    svg {
+      right: 26px;
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 30px 26px;
+    font-size: @fz-medium;
+    font-weight: @bold;
+    text-decoration: none;
+    color: @white;
+    .animation();
+
+    svg {
+      position: absolute;
+      top: 20px;
+      fill: @dark-teal;
+
+      @media(min-width: @screen-lg) {
+        top: 29px;
+      }
+    }
+
+    @media (min-width: @screen-lg) {
+      padding-top: 36px;
+      padding-bottom: 36px;
+      font-size: 20px;
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+  }
+
+}
