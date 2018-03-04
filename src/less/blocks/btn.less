@@ -1,0 +1,27 @@
+.btn {
+  width: 290px;
+  max-width: 100%;
+  padding: 14px;
+  font-size: @fz-small;
+  font-weight: @bold;
+  color: @font-color;
+  background: @white;
+  text-transform: uppercase;
+  border: 2px solid @font-color;
+  outline: none;
+  .animation();
+
+  &:hover {
+    color: @white;
+    background-color: @font-color;
+  }
+
+  &:active {
+    background-color: @font-color;
+    color: rgba(255,255,255,.3);
+  }
+
+  &:focus {
+    outline: 1px solid @teal;
+  }
+}
