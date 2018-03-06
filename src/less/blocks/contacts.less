@@ -1,0 +1,121 @@
+.contacts {
+  padding-top: 30px;
+  padding-bottom: 30px;
+   @media (min-width: @screen-lg) {
+    padding-top: 55px;
+  }
+
+  &__wrapper {
+    @media (min-width: @screen-xl) {
+      width: 1050px;
+      padding-left: 185px;
+      margin-right: auto;
+      margin-left: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__text {
+    .container--padding();
+
+    @media (min-width: @screen-lg) {
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom: 20px;
+    }
+
+    @media (min-width: @screen-xl) {
+      display: block;
+      padding: 0;
+      margin-right: 0;
+      margin-left: 0;
+      width: 30%;
+    }
+  }
+
+  &__title {
+    position: relative;
+    width: 100%;
+    .middle-title();
+    margin-bottom: 30px;
+
+    @media (min-width: @screen-lg) {
+      margin-bottom: 50px;
+    }
+
+     @media (min-width: @screen-xl) {
+      margin-top: 65px;
+     }
+
+    svg {
+      display: none;
+
+      @media (min-width: @screen-lg) {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: -20px;
+      }
+
+      @media (min-width: @screen-xl) {
+        right: auto;
+        left: -65px-51px;
+      }
+    }
+  }
+
+  &__btn {
+    width: 260px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media (min-width: @screen-xl) {
+      margin: -82px 0 0 34px;;
+    }
+  }
+
+  &__mail {
+    color: @font-color;
+    border-bottom: 1px solid @teal-98;
+    text-decoration: none;
+    .animation();
+
+    &:hover {
+      color: @teal-70;
+      border-color: @teal-70;
+    }
+
+    &:active {
+      color:@teal-98;
+      border-color:@teal-98;
+      opacity: .3;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 40px;
+
+    @media (min-width: @screen-lg) {
+      width: 50%;
+    }
+
+    @media (min-width: @screen-lg) {
+      width: 100%;
+    }
+  }
+  &__value {
+    width: 70%;
+  }
+  &__address {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.6;
+  }
+}
